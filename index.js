@@ -24,7 +24,7 @@ app.post('/asana-webhook', (req, res) => {
     },
   };
 
-  // Post the data to Airtable
+  
   axios.post(
     `https://api.airtable.com/v0/${AIRTABLE_BASE_ID}/${ASANA_TASKS_TABLE_NAME}`,
     airtableData,
